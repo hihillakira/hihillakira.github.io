@@ -1,0 +1,17 @@
+/* =============== */
+/*     基本設定    */
+/* =============== */
+
+
+/* 必要に応じてプロパティを追加 */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* 他の画像に変更可 */
+body {
+  background: linear-gradient(to top, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(img/background.jpg);
+  background-size: cover;
+}
+
