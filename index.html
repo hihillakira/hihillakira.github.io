@@ -1,135 +1,25 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせフォーム</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 
-<div id="div1" style="display:none;">
-<p>メッセージ</p>
-</div>
-<input type="button" id="button1" value="ボタン1" />
+  <!-- 問い合わせフォームページ -->
+  <section class="contact">
+    <div class="container">
+      <!-- 問い合わせフォーム入力欄 -->
+      
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-<script>
-    
-$(function() {
-	$("#button1").click(function() {
-		$("#div1").dialog({
-			modal:true, //モーダル表示
-			title:"テストダイアログ1", //タイトル
-			buttons: { //ボタン
-			"確認": function() {
-				$(this).dialog("close");
-				}
-			}
-		});
-	});
-});
-</script>
-<div id="div2" >
-    <p>メッセージ</p>
+      <!-- 問い合わせフォーム入力欄 -->
     </div>
-    <input type="button" id="button2" value="ボタン2" />
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script>
-    $(function() {
-        $("#div2").dialog({
-            autoOpen: false, //呼ばれるまで非表示
-            modal:true, //モーダル表示
-            title:"テストダイアログ2", //タイトル
-            buttons: { //ボタン
-            "確認": function() {
-                $(this).dialog("close");
-                }
-            }
-        });
-        $("#button2").click(function() {
-            $("#div2").dialog("open");
-        });
-    });
-    </script>
-    <div id="div3" style="display:none;">
-        <p>メッセージ</p>
-        </div>
-        <input type="button" id="button3" value="ボタン3" />
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-        <script>
-        $(function() {
-            $("#button3").click(function() {
-                $("#div3").dialog({
-                    modal:true, //モーダル表示
-                    title:"テストダイアログ3", //タイトル
-                    buttons: { //ボタン
-                    "確認": function() {
-                        $(this).dialog("close");
-                        },
-                    "キャンセル": function() {
-                        $(this).dialog("close"); 
-                        }
-                    }
-                });
-            });
-        });
-        </script>
-        <div id="div4" style="display:none;">
-            <input type="text" id="input1" size="5" maxlength="5">
-            </div>
-            <p id="p4"></p>
-            <input type="button" id="button4" value="ボタン4" />
-            
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-            <script>
-            $(function() {
-                $("#button4").click(function() {
-                    $("#div4").dialog({
-                        modal:true, //モーダル表示
-                        title:"テストダイアログ4", //タイトル
-                        buttons: { //ボタン
-                        "確認": function() {
-                            $("#p4").text($("#input1").val());
-                            $(this).dialog("close");
-                            },
-                        "キャンセル": function() {
-                            $(this).dialog("close"); 
-                            }
-                        }
-                    });
-                });
-            });
-            </script>
-            <div id="div5" style="display:none;">
-<p>メッセージ</p>
-</div>
-<input type="button" id="button5" value="ボタン5" />
+  </section>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-<script>
-$(function() {
-	$("#button5").click(function() {
-		$("#div5").dialog({
-			modal:true, //モーダル表示
-			width:150, //ダイアログの横幅(px)
-			height:150, //ダイアログの縦幅(px)
-			title:"テストダイアログ1", //タイトル
-			buttons: { //ボタン
-			"確認": function() {
-				$(this).dialog("close");
-				}
-			}
-		});
-	});
-});
-</script>
 </body>
 </html>
